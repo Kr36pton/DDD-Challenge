@@ -1,5 +1,19 @@
 package co.com.sofka.domicilio.domicilio;
 
-public class Pedido {
-    
+import co.com.sofka.domain.generic.Entity;
+import co.com.sofka.domicilio.domicilio.values.*;
+
+public class Pedido extends Entity<PedidoId> {
+
+    protected Contenido contenido;
+    protected Valor valor;
+
+    public Pedido(PedidoId entityId, Contenido contenido, Valor valor) {
+        super(entityId);
+        this.contenido = contenido;
+        this.valor = valor;
+    }
+
+    public void actualizarDatos(){
+    }
 }
