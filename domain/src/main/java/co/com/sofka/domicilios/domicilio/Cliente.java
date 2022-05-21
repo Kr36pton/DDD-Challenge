@@ -1,9 +1,9 @@
-package co.com.sofka.domicilio.domicilio;
+package co.com.sofka.domicilios.domicilio;
 
 import java.util.Objects;
 
 import co.com.sofka.domain.generic.Entity;
-import co.com.sofka.domicilio.domicilio.values.*;
+import co.com.sofka.domicilios.domicilio.values.*;
 
 public class Cliente extends Entity<ClienteId> {
 

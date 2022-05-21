@@ -1,7 +1,7 @@
-package co.com.sofka.domicilio.domicilio;
+package co.com.sofka.domicilios.domicilio;
 
 import co.com.sofka.domain.generic.EventChange;
-import co.com.sofka.domicilio.domicilio.events.*;
+import co.com.sofka.domicilios.domicilio.events.*;
 
 public class DomicilioEventChange extends EventChange{
     public DomicilioEventChange(Domicilio domicilio){

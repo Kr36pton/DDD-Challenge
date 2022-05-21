@@ -1,8 +1,8 @@
-package co.com.sofka.domicilio.domicilio.commands;
+package co.com.sofka.domicilios.mensajero.commands;
 
 import co.com.sofka.domain.generic.Command;
-import co.com.sofka.domicilio.domicilio.*;
-import co.com.sofka.domicilio.domicilio.values.*;
+import co.com.sofka.domicilios.domicilio.*;
+import co.com.sofka.domicilios.domicilio.values.*;
 
 public class CrearDomicilio extends Command{
     private final DomicilioId domicilioId;

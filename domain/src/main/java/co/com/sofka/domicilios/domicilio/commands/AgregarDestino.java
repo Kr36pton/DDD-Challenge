@@ -1,7 +1,7 @@
-package co.com.sofka.domicilio.domicilio.commands;
+package co.com.sofka.domicilios.domicilio.commands;
 
 import co.com.sofka.domain.generic.Command;
-import co.com.sofka.domicilio.domicilio.*;
+import co.com.sofka.domicilios.domicilio.*;
 
 public class AgregarDestino extends Command {
 

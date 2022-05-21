@@ -1,4 +1,4 @@
-package co.com.sofka.domicilio.domicilio.values;
+package co.com.sofka.domicilios.domicilio.values;
 
 import co.com.sofka.domain.generic.ValueObject;
 import java.util.Objects;

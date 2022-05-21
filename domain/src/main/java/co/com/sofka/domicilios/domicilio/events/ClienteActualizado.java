@@ -1,7 +1,7 @@
-package co.com.sofka.domicilio.domicilio.events;
+package co.com.sofka.domicilios.domicilio.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
-import co.com.sofka.domicilio.domicilio.values.*;
+import co.com.sofka.domicilios.domicilio.values.*;
 
 public class ClienteActualizado extends DomainEvent {
 

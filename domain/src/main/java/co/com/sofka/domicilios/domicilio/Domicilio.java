@@ -1,12 +1,12 @@
-package co.com.sofka.domicilio.domicilio;
+package co.com.sofka.domicilios.domicilio;
 
 import java.util.List;
 import java.util.Objects;
 
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
-import co.com.sofka.domicilio.domicilio.values.*;
-import co.com.sofka.domicilio.domicilio.events.*;
+import co.com.sofka.domicilios.domicilio.events.*;
+import co.com.sofka.domicilios.domicilio.values.*;
 
 public class Domicilio extends AggregateEvent<DomicilioId>{
     protected DomicilioId domicilioId;

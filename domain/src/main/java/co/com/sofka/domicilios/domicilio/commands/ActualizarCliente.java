@@ -1,7 +1,7 @@
-package co.com.sofka.domicilio.domicilio.commands;
+package co.com.sofka.domicilios.domicilio.commands;
 
 import co.com.sofka.domain.generic.Command;
-import co.com.sofka.domicilio.domicilio.values.*;
+import co.com.sofka.domicilios.domicilio.values.*;
 
 public class ActualizarCliente extends Command {
     private final Nombre nombre;
