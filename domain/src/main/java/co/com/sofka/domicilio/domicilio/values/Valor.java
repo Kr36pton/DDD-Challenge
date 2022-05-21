@@ -1,7 +1,6 @@
 package co.com.sofka.domicilio.domicilio.values;
 
 import co.com.sofka.domain.generic.ValueObject;
-
 import java.util.Objects;
 
 public class Valor implements ValueObject<Valor.Props> {
@@ -17,6 +16,7 @@ public class Valor implements ValueObject<Valor.Props> {
         if (this.monto.isBlank()) {
             throw new IllegalArgumentException("El monto no puede estar en blanco");
         }
+        
     }
 
 
@@ -27,7 +27,7 @@ public class Valor implements ValueObject<Valor.Props> {
             public String moneda() {
                 return moneda;
             }
-
+            
             @Override
             public String monto() {
                 return monto;

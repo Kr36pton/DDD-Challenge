@@ -3,7 +3,7 @@ package co.com.sofka.domicilio.domicilio;
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domicilio.domicilio.values.*;
 
-public class Domicilio extends AggregateEvent{
+public class Domicilio extends AggregateEvent<DomicilioId>{
     protected final DomicilioId domicilioId;
     protected final Cliente cliente;
     protected final Pedido pedido;

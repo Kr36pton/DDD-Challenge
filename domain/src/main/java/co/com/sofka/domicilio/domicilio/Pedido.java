@@ -14,6 +14,18 @@ public class Pedido extends Entity<PedidoId> {
         this.valor = valor;
     }
 
-    public void actualizarDatos(){
+    public void actualizarDatos( Contenido contenido, Valor valor){
+        this.valor = valor;
+        this.contenido = contenido;
     }
+
+    public Contenido Contenido() {
+        return contenido;
+    }
+
+    public Valor Valor() {
+        return valor;
+    }
+
+
 }
