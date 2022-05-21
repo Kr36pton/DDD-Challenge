@@ -19,13 +19,4 @@ public class Pedido extends Entity<PedidoId> {
         this.contenido = contenido;
     }
 
-    public Contenido Contenido() {
-        return contenido;
-    }
-
-    public Valor Valor() {
-        return valor;
-    }
-
-
 }

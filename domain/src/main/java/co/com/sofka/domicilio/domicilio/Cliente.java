@@ -1,5 +1,7 @@
 package co.com.sofka.domicilio.domicilio;
 
+import java.util.Objects;
+
 import co.com.sofka.domain.generic.Entity;
 import co.com.sofka.domicilio.domicilio.values.*;
 
@@ -14,8 +16,8 @@ public class Cliente extends Entity<ClienteId> {
         this.contacto = contacto;
     }
 
-    public void actualizarContacto(){
-        this.nombre = nombre;
-        this.contacto = contacto;
+    public void actualizarContacto(Nombre nombre, Contacto contacto) {
+        this.nombre = Objects.requireNonNull(nombre);
+        this.contacto = Objects.requireNonNull(contacto);
     }
 }

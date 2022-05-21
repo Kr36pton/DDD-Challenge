@@ -44,4 +44,21 @@ public class Domicilio extends AggregateEvent<DomicilioId>{
     public void actualizarContacto(Nombre nombre, Contacto contacto){
         appendChange(new ClienteActualizado(nombre, contacto)).apply();
     }
+
+
+    public Cliente Cliente() {
+        return cliente;
+    }
+
+    public Pedido Pedido() {
+        return pedido;
+    }
+
+    public Valor Valor() {
+        return valor;
+    }
+
+    public Destino.Destinos Destino() {
+        return destino;
+    }
 }
