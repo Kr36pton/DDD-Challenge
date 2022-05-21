@@ -14,5 +14,9 @@ public class DomicilioEventChange extends EventChange{
         apply((DestinoCreado event) -> {
             domicilio.destino = event.getValue();
         });
+        apply((ClienteActualizado event) -> {
+            domicilio.cliente.nombre = event.getNombre();
+            domicilio.cliente.contacto = event.getContacto();
+        });
     }
 }

@@ -40,4 +40,8 @@ public class Domicilio extends AggregateEvent<DomicilioId>{
     public void asignarDestino(){
         appendChange(new DestinoCreado(Destino.Destinos.DIRECCION)).apply();
     }
+
+    public void actualizarContacto(Nombre nombre, Contacto contacto){
+        appendChange(new ClienteActualizado(nombre, contacto)).apply();
+    }
 }
