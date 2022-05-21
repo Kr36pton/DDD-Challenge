@@ -13,7 +13,7 @@ public class Domicilio extends AggregateEvent<DomicilioId>{
     protected Pedido pedido;
     protected Valor valor;
     protected EstadoDomicilio estadoDomicilio;
-    protected Destino destino;
+    protected Destino.Destinos destino;
 
     public Domicilio(DomicilioId entityId, DomicilioId domicilioId, Cliente cliente, Pedido pedido, Valor valor) {
         super(entityId);
