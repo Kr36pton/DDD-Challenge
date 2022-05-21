@@ -1,6 +1,7 @@
 package co.com.sofka.domicilio.domicilio;
 
 import java.util.List;
+import java.util.Objects;
 
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
@@ -42,6 +43,8 @@ public class Domicilio extends AggregateEvent<DomicilioId>{
     }
 
     public void actualizarContacto(Nombre nombre, Contacto contacto){
+        Objects.requireNonNull(nombre);
+        Objects.requireNonNull(contacto);
         appendChange(new ClienteActualizado(nombre, contacto)).apply();
     }
 
