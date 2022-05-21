@@ -12,6 +12,8 @@ public class Domicilio extends AggregateEvent<DomicilioId>{
     protected Cliente cliente;
     protected Pedido pedido;
     protected Valor valor;
+    protected EstadoDomicilio estadoDomicilio;
+    protected Destino destino;
 
     public Domicilio(DomicilioId entityId, DomicilioId domicilioId, Cliente cliente, Pedido pedido, Valor valor) {
         super(entityId);
@@ -28,5 +30,14 @@ public class Domicilio extends AggregateEvent<DomicilioId>{
         var domicilio = new Domicilio(entityId);
         events.forEach(domicilio::applyEvent);
         return domicilio;
+    }
+
+    public EstadoDomicilio seguirDomicilio(DomicilioId domicilioId){
+        var estado = this.estadoDomicilio;
+        return estado;
+    }
+
+    public void asignarDestino(){
+        appendChange(new DestinoCreado(Destino.Destinos.DIRECCION)).apply();
     }
 }
