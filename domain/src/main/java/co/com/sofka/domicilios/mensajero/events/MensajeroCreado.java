@@ -9,7 +9,7 @@ public class MensajeroCreado extends DomainEvent{
     private final MedioTransporte mediotransporte;
 
     public MensajeroCreado(Nombre nombre, Contacto contacto, MedioTransporte mediotransporte) {
-        super("co.com.sofka.transporte.MensajeroCreado");
+        super("co.com.sofka.domicilios.MensajeroCreado");
         this.nombre = nombre;
         this.contacto = contacto;
         this.mediotransporte = mediotransporte;

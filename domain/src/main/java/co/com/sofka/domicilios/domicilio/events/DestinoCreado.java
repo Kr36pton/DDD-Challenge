@@ -12,7 +12,7 @@ public class DestinoCreado extends DomainEvent {
     }
 
     public enum Destinos{
-        OFICINA, DIRECCION
+        LOCAL, DIRECCION
     }
 
     public Destino.Destinos getValue() {
